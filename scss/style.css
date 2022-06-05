@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0d192b;
+  color: white;
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+}
+
+body .main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 90vh;
+}
+
+body .card-container {
+  background-color: #14253d;
+  width: 17.5rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+body .card-container .image-container {
+  position: relative;
+}
+
+body .card-container .image-container div {
+  position: absolute;
+  background-color: rgba(0, 255, 247, 0.6);
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+
+body .card-container .image-container div img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+body .card-container .image-container div:hover {
+  opacity: 1;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+body .card-container .cube-image {
+  width: 100%;
+  height: "auto";
+  display: block;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+body .card-container .nft-title {
+  margin-top: 1.5rem;
+  font-weight: 600;
+}
+
+body .card-container .collection-description {
+  margin-block: 0.5em;
+}
+
+body .card-container .collection-description p {
+  font-size: 16px;
+  color: #8bacda;
+  line-height: 1.8rem;
+  font-weight: 300;
+}
+
+body .card-container .nft-price-container {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #8bacda;
+  font-size: 14px;
+}
+
+body .card-container .nft-price-container .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #00fff7;
+  font-weight: 600;
+}
+
+body .card-container .nft-price-container .days-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #8bacda;
+}
+
+body .card-container .nft-price-container .clock,
+body .card-container .nft-price-container .ethereum {
+  vertical-align: middle;
+}
+
+body .card-container .author-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .card-container .author-details .nft-owerner {
+  border: 1px solid #2f415b;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 2rem;
+}
+
+body .card-container .author-details p {
+  margin-left: 0.5rem;
+}
+
+body .card-container .author-details p span {
+  color: #8bacda;
+}
+
+body .card-container .nft-title,
+body .card-container .cube-image,
+body .card-container span {
+  cursor: pointer;
+}
+
+body .card-container .nft-title:hover,
+body .card-container span:hover {
+  color: #00fff7;
+}
+
+body .attribution {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

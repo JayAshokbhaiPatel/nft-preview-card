@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+$soft-blue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+$main-bg: hsl(217, 54%, 11%);
+$card-bg: hsl(216, 50%, 16%);
+$line-color: hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%);
+$paragraph-font-size: 18px;
+$font-family: "Outfit", sans-serif;
+$border-radius: 0.5rem;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $main-bg;
+  color: $white;
+  font-size: $paragraph-font-size;
+  font-family: $font-family;
+  width: 100%;
+  min-height: 100vh;
+  .main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+  }
+  .card-container {
+    background-color: $card-bg;
+    width: 17.5rem;
+    border-radius: $border-radius;
+    -webkit-border-radius: $border-radius;
+    -moz-border-radius: $border-radius;
+    -ms-border-radius: $border-radius;
+    -o-border-radius: $border-radius;
+    padding: 1rem;
+    .image-container {
+      position: relative;
+    }
+    .image-container div {
+      position: absolute;
+      background-color: hsla(178, 100%, 50%, 0.6);
+      top: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+      }
+    }
+
+    .image-container div:hover {
+      opacity: 1;
+      cursor: pointer;
+      border-radius: $border-radius;
+      -webkit-border-radius: $border-radius;
+      -moz-border-radius: $border-radius;
+      -ms-border-radius: $border-radius;
+      -o-border-radius: $border-radius;
+    }
+    .cube-image {
+      width: 100%;
+      height: "auto";
+      display: block;
+      border-radius: $border-radius;
+      -webkit-border-radius: $border-radius;
+      -moz-border-radius: $border-radius;
+      -ms-border-radius: $border-radius;
+      -o-border-radius: $border-radius;
+    }
+    .nft-title {
+      margin-top: 1.5rem;
+      font-weight: 600;
+    }
+    .collection-description {
+      margin-block: 0.5em;
+      p {
+        font-size: 16px;
+        color: $soft-blue;
+        line-height: 1.8rem;
+        font-weight: 300;
+      }
+    }
+    .nft-price-container {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid $soft-blue;
+      font-size: 14px;
+      .price {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        color: $cyan;
+        font-weight: 600;
+      }
+      .days-left {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        color: $soft-blue;
+      }
+      .clock,
+      .ethereum {
+        vertical-align: middle;
+      }
+    }
+
+    .author-details {
+      display: flex;
+      font-size: 14px;
+      align-items: center;
+      .nft-owerner {
+        border: 1px solid $line-color;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        width: 2rem;
+      }
+      p {
+        margin-left: 0.5rem;
+        span {
+          color: $soft-blue;
+        }
+      }
+    }
+
+    .nft-title,
+    .cube-image,
+    span {
+      cursor: pointer;
+    }
+
+    .nft-title:hover,
+    span:hover {
+      color: $cyan;
+    }
+  }
+
+  .attribution {
+    text-align: center;
+  }
+}
